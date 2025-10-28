@@ -1,0 +1,18 @@
+# robots.txt para Unileg Ecuador
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.unilegec.com/sitemap.xml
+
+# Bloquear archivos innecesarios
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /admin/
+Disallow: /private/
+
+# Permitir acceso a recursos importantes
+Allow: /Imagenes/
+Allow: /styles.css
+Allow: /main.js
