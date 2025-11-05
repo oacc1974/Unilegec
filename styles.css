@@ -335,6 +335,7 @@ nav {
 .service-card p {
     color: var(--text-light);
     line-height: 1.7;
+    text-align: justify;
 }
 
 /* Success Stories */
@@ -582,6 +583,15 @@ nav {
     background: var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-5px);
+}
+
+.contact-method a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-method a:hover i {
+    transform: scale(1.2);
+    color: var(--secondary-color);
 }
 
 .contact-form {
