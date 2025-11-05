@@ -820,3 +820,36 @@ footer {
         right: 20px;
     }
 }
+
+/* Responsive para secciones de proceso y requisitos */
+@media (max-width: 768px) {
+    /* Hacer que las tarjetas de proceso se apilen verticalmente en móvil */
+    section div[style*="display:flex"][style*="gap:2rem"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    section div[style*="display:flex"][style*="gap:1.5rem"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    /* Centrar números/iconos */
+    section div[style*="min-width:80px"],
+    section div[style*="min-width:50px"] {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Asegurar que el texto ocupe todo el ancho */
+    section div[style*="flex:1"] {
+        width: 100% !important;
+    }
+    
+    /* Mantener texto justificado en móvil */
+    section p[style*="text-align:justify"] {
+        text-align: justify !important;
+        width: 100% !important;
+    }
+}
